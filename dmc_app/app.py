@@ -51,6 +51,12 @@ with st.container(border=True):
             "image": "../dmc-images/Lady.jpeg",
             "bio": "A human demon hunter with a personal vendetta against demons.",
             "style": "Gunslinger",
+        },
+        "Sparda": {
+            "name": "Lady",
+            "image": "../dmc-images/Sparda.jpeg",
+            "bio": "Sparda is the overarching protagonist of the Devil May Cry franchise. He was a mighty demon swordsman who is known as the Legendary Dark Knight. He is also Dante and Vergil's father.",
+            "style": "Swordsman, Martial Arts and Firearms",
         }
     }
 
