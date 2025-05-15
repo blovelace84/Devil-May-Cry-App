@@ -5,7 +5,7 @@ from PIL import Image
 # --- 1. Basic Setup ---
 st.set_page_config(
     page_title="Devil May Cry App",
-    page_icon="😈",
+    page_icon="😈⚔️",
     layout="wide",
 )
 
@@ -17,8 +17,8 @@ st.markdown(utils.load_custom_css(), unsafe_allow_html=True)  # Load CSS from ut
 with st.container(border=True):
     st.markdown('<h1 class="title">Devil May Cry</h1>', unsafe_allow_html=True)
     try:
-        dante_image = Image.open("dmc-images/dante_image.jpeg")
-        st.image(dante_image, width=400, use_column_width=False, output_format="JPEG")
+        dante_image = Image.open("../dmc-images/dante_image.jpeg")
+        st.image(dante_image, width=400, use_container_width=False, output_format="JPEG")
     except FileNotFoundError:
         st.warning("Dante image not found.  Please make sure you have dante.jpg in the same directory")
 
@@ -30,25 +30,25 @@ with st.container(border=True):
     characters = {
         "Dante": {
             "name": "Dante",
-            "image": "dmc-images/dante.jpeg",
+            "image": "../dmc-images/dante.jpeg",
             "bio": "The legendary demon hunter, son of Sparda.  He is known for his cocky attitude and incredible power.",
             "style": "Trickster, Swordmaster, Gunslinger, Royal Guard",
         },
         "Vergil": {
             "name": "Vergil",
-            "image": "dmc-image/Vergil.jpeg",
+            "image": "../dmc-image/Vergil.jpeg",
             "bio": "Dante's twin brother, who seeks power above all else.  He is a master of the Yamato.",
             "style": "Darkslayer",
         },
         "Nero": {
             "name": "Nero",
-            "image": "dmc-images/Nero.jpeg",
+            "image": "../dmc-images/Nero.jpeg",
             "bio": "A young demon hunter with a mysterious power, the Devil Bringer.  He is hotheaded but righteous.",
             "style": "Devil Bringer, Swordmaster, Gunslinger",
         },
         "Lady": {
             "name": "Lady",
-            "image": "dmc-images/Lady.jpeg",
+            "image": "../dmc-images/Lady.jpeg",
             "bio": "A human demon hunter with a personal vendetta against demons.",
             "style": "Gunslinger",
         }
